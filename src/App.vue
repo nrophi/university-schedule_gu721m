@@ -55,7 +55,7 @@ const weekSchedule = computed(() => {
 });
 
 const currentTimeStatus = computed(() => {
-  let lectureNum = -1;
+  let lectureNum = 0;
   let sublectureNum = 0;
   let pausing = Pausing.None;
   let minutesLeft = currentMinutes.value - startFirstLecture;
