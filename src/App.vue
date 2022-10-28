@@ -10,11 +10,21 @@ const defaultPausingDuration = 10;
 const largePausingDuration = 30;
 const largePausingBeforeLecture = 1;
 const maxLectureCount = 5;
+const lectureDuration = sublectureDuration * 2 + sublecturePausingDuration;
 
 enum Pausing {
   None,
   Lecture,
   Sublecture,
+}
+
+interface Lecture {
+  disciplineName: string;
+  teacherName: string;
+  auditorium: string;
+  building: string;
+  start: number;
+  end: number;
 }
 
 const currentDate = ref(new Date());
@@ -45,10 +55,21 @@ const isSecondStudyWeek = computed(() => {
 const weekSchedule = computed(() => {
   const weekSchedule = [];
   for (const daySchedule of schedule) {
-    const weekdaySchedule = [];
-    for (const lecture of daySchedule) {
-      weekdaySchedule.push(lecture[+isSecondStudyWeek.value] || lecture[0]);
-    }
+    const weekdaySchedule: Lecture[] = [];
+    daySchedule.forEach((item, index) => {
+      const lecture = item[+isSecondStudyWeek.value] || item[0];
+      let start = startFirstLecture + index * (lectureDuration + defaultPausingDuration);
+      if (index > largePausingBeforeLecture) start = start + largePausingDuration - defaultPausingDuration;
+
+      weekdaySchedule.push({
+        disciplineName: lecture["disciplineName"] || "",
+        teacherName: lecture["teacherName"] || "",
+        auditorium: lecture["auditorium"] || "",
+        building: lecture["building"] || "",
+        start: start,
+        end: start + lectureDuration
+      });
+    })
     weekSchedule.push(weekdaySchedule);
   }
   return weekSchedule;
@@ -109,7 +130,7 @@ const lastTimeForInitLecture = computed(() => {
   if (isWeekend.value) return -1;
   let minutesLeft = currentMinutes.value - startFirstLecture;
   for (let i = 0; i < initLectureNum.value; i++) {
-    minutesLeft -= sublectureDuration * 2 + sublecturePausingDuration;
+    minutesLeft -= lectureDuration;
     minutesLeft -=
       i == largePausingBeforeLecture
         ? largePausingDuration
@@ -144,12 +165,9 @@ setInterval(() => {
       <h3>
         {{ ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница"][index] }}
       </h3>
-      <ScheduleTable
-        :schedule="daySchedule"
-        :activeNum="
-          currentDate.getDay() - 1 == index ? currentTimeStatus.lectureNum : -1
-        "
-      />
+      <ScheduleTable :schedule="daySchedule" :activeNum="
+        currentDate.getDay() - 1 == index ? currentTimeStatus.lectureNum : -1
+      " />
     </div>
   </div>
 </template>

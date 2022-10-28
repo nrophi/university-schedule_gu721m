@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const props = defineProps(["schedule", "activeNum"]);
+
+function timeFormat(time: number) {
+  const hours = Math.trunc(time / 60);
+  const minutes = time % 60;
+  return `${hours}:${minutes > 10 ? '' : '0'}${minutes}`
+}
 </script>
 
 <template>
@@ -7,6 +13,7 @@ const props = defineProps(["schedule", "activeNum"]);
     <thead>
       <tr>
         <th>#</th>
+        <th>Время</th>
         <th>Дисциплина</th>
         <th>Преподаватель</th>
         <th>Кабинет</th>
@@ -17,11 +24,13 @@ const props = defineProps(["schedule", "activeNum"]);
       <tr
         :class="{ active: props.activeNum == index }"
         v-for="(
-          { disciplineName, teacherName, auditorium, building }, index
+          { disciplineName, teacherName, auditorium, building, start, end }, index
         ) in props.schedule"
         :key="index"
+        v-show="disciplineName"
       >
         <td data-label="#">{{ index + 1 }}</td>
+        <td data-label="Время">{{ timeFormat(start) }}<br>{{ timeFormat(end) }}</td>
         <td data-label="Дисциплина">{{ disciplineName }}</td>
         <td data-label="Преподаватель">{{ teacherName }}</td>
         <td data-label="Кабинет">{{ auditorium }}</td>

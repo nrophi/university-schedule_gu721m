@@ -44,44 +44,44 @@
       {
         "disciplineName": "Электронные устройства СА",
         "teacherName": "Малахов О.В.",
-        "auditorium": 105,
-        "building": 12
+        "auditorium": "105",
+        "building": "12"
       }
     ],
     [
       {
         "disciplineName": "Схемотехника узлов автоматики",
         "teacherName": "Малахов О.В.",
-        "auditorium": 105,
-        "building": 12
+        "auditorium": "105",
+        "building": "12"
       },
       {
         "disciplineName": "ТАП",
         "teacherName": "Сухов Д.А.",
-        "auditorium": 102,
-        "building": 12
+        "auditorium": "102",
+        "building": "12"
       }
     ],
     [
       {
         "disciplineName": "Электронные устройства СА",
         "teacherName": "Сухов Д.А.",
-        "auditorium": 105,
-        "building": 12
+        "auditorium": "105",
+        "building": "12"
       },
       {
         "disciplineName": "Электромеханика и мехатроника",
         "teacherName": "Левин В.В.",
-        "auditorium": 102,
-        "building": 12
+        "auditorium": "102",
+        "building": "12"
       }
     ],
     [
       {
         "disciplineName": "Электромеханика и мехатроника",
         "teacherName": "Левин В.В.",
-        "auditorium": 102,
-        "building": 12
+        "auditorium": "102",
+        "building": "12"
       },
       {}
     ]
