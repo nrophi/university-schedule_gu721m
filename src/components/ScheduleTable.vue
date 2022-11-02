@@ -4,7 +4,7 @@ const props = defineProps(["schedule", "activeNum"]);
 function timeFormat(time: number) {
   const hours = Math.trunc(time / 60);
   const minutes = time % 60;
-  return `${hours}:${minutes > 10 ? '' : '0'}${minutes}`
+  return `${hours}:${minutes >= 10 ? '' : '0'}${minutes}`
 }
 </script>
 
