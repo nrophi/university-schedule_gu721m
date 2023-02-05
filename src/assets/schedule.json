@@ -5,26 +5,71 @@
     ],
     [
       {
-        "disciplineName": "Иностранный язык",
-        "teacherName": "доц. Гуковская Т.Г.",
-        "auditorium": "408",
-        "building": "2"
+        "disciplineName": "Антикоррупционная политика государства",
+        "teacherName": "",
+        "auditorium": "412",
+        "building": "3"
+      },
+      {
+        "disciplineName": "Кадровая политика и кадровый аудит в организации",
+        "teacherName": "",
+        "auditorium": "412",
+        "building": "3"
       }
     ],
     [
       {
-        "disciplineName": "Рынок труда и политика занятости населения",
-        "teacherName": "доц. Черков В.А.",
+        "disciplineName": "Информационно-аналитические технологии государственного и муниципального управления",
+        "teacherName": "",
         "auditorium": "301а",
         "building": "3"
       }
     ],
     [
       {
-        "disciplineName": "Рынок труда и политика занятости населения",
-        "teacherName": "доц. Черков В.А.",
-        "auditorium": "321",
+        "disciplineName": "Антикоррупционная политика государства",
+        "teacherName": "",
+        "auditorium": "301",
         "building": "2"
+      }
+    ],
+    [
+      {},
+      {
+        "disciplineName": "Антикоррупционная политика государства",
+        "teacherName": "",
+        "auditorium": "301",
+        "building": "2"
+      }
+    ]
+  ],
+  [
+    [
+      {}
+    ],
+    [
+      {
+        "disciplineName": "Кадровая политика и кадровый аудит в организации",
+        "teacherName": "",
+        "auditorium": "317",
+        "building": "3"
+      },
+      {}
+    ],
+    [
+      {
+        "disciplineName": "Кадровая политика и кадровый аудит в организации",
+        "teacherName": "",
+        "auditorium": "317",
+        "building": "3"
+      }
+    ],
+    [
+      {
+        "disciplineName": "Информационные технологии в социальной сфере",
+        "teacherName": "",
+        "auditorium": "301а",
+        "building": "3"
       }
     ],
     [
@@ -36,114 +81,86 @@
       {}
     ],
     [
+      {
+        "disciplineName": "Государственная политика в здравоохранении",
+        "teacherName": "",
+        "auditorium": "412",
+        "building": "3"
+      },
+      {
+        "disciplineName": "Информационные технологии в социальной сфере",
+        "teacherName": "",
+        "auditorium": "301а",
+        "building": "3"
+      }
+    ],
+    [
+      {
+        "disciplineName": "Информационно-аналитические технологии государственного и муниципального управления",
+        "teacherName": "",
+        "auditorium": "301а",
+        "building": "3"
+      }
+    ],
+    [
+      {
+        "disciplineName": "Информационные технологии в социальной сфере",
+        "teacherName": "",
+        "auditorium": "301а",
+        "building": "3"
+      }
+    ],
+    [
       {}
-    ],
-    [
-      {
-        "disciplineName": "Философские проблемы научного познания",
-        "teacherName": "доц. Рудько В.А.",
-        "auditorium": "327",
-        "building": "2"
-      }
-    ],
-    [
-      {
-        "disciplineName": "Управление персоналом",
-        "teacherName": "доц. Черков В.А.",
-        "auditorium": "301а",
-        "building": "3"
-      }
-    ],
-    [
-      {
-        "disciplineName": "Рынок труда и политика занятости населения",
-        "teacherName": "доц. Черков В.А.",
-        "auditorium": "301а",
-        "building": "3"
-      }
     ]
   ],
   [
     [
       {
-        "disciplineName": "Теория и механизмы современного государственного управления",
-        "teacherName": "доц.Хомутовская Я.Н.",
+        "disciplineName": "Государственная политика в здравоохранении",
+        "teacherName": "",
         "auditorium": "301а",
         "building": "3"
       }
     ],
     [
       {
-        "disciplineName": "Управление персоналом",
-        "teacherName": "доц. Черков В.А.",
-        "auditorium": "",
-        "building": ""
+        "disciplineName": "Теория и риторика научного текста",
+        "teacherName": "",
+        "auditorium": "208",
+        "building": "2"
       }
     ],
     [
+      {}
+    ],
+    [
+      {}
+    ],
+    [
+      {}
+    ]
+  ],
+  [
+    [
       {
-        "disciplineName": "Управление персоналом",
-        "teacherName": "доц. Черков В.А.",
+        "disciplineName": "Политика в сфере социально-трудовых отношений",
+        "teacherName": "",
         "auditorium": "318",
         "building": "2"
       },
+      {}
+    ],
+    [
       {
-        "disciplineName": "Философские проблемы научного познания",
-        "teacherName": "доц. Рудько В.А.",
-        "auditorium": "311",
+        "disciplineName": "Политика в сфере социально-трудовых отношений",
+        "teacherName": "",
+        "auditorium": "318",
         "building": "2"
       }
     ],
     [
       {}
-    ],
-    [
-      {}
-    ]
-  ],
-  [
-    [
-      {}
-    ],
-    [
-      {}
-    ],
-    [
-      {
-        "disciplineName": "Педагогика высшей школы",
-        "teacherName": "доц.Полтавская Н.А.",
-        "auditorium": "325",
-        "building": "2"
-      }
-    ],
-    [
-      {},
-      {
-        "disciplineName": "Иностранный язык",
-        "teacherName": "доц. Гуковская Т.Г.",
-        "auditorium": "408",
-        "building": "2"
-      }
-    ],
-    [
-      {}
-    ]
-  ],
-  [
-    [
-      {}
-    ],
-    [
-      {}
-    ],
-    [
-      {},
-      {
-        "disciplineName": "Педагогика высшей школы",
-        "teacherName": "асс.Клипакова",
-        "auditorium": "313",
-        "building": "2"
-      }
     ],
     [
       {}
